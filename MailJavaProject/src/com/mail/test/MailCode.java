@@ -29,8 +29,8 @@ public class MailCode {
 		     props.put("mail.debug", "true");
 		     props.put("mail.store.protocol", "pop3");
 		     props.put("mail.transport.protocol", "smtp");
-		     final String username = "yawarshaikh26@gmail.com";//
-		     final String password = "Id0ntkn0wbr0";
+		     final String username = "email Account";//
+		     final String password = "password";
 		     try{
 		     Session session = Session.getDefaultInstance(props, 
 		                          new Authenticator(){
@@ -44,9 +44,9 @@ public class MailCode {
 		     String[] emails;
 		      
 		  // -- Set the FROM and TO fields --
-		     msg.setFrom(new InternetAddress("yawarshaikh26@gmail.com"));
+		     msg.setFrom(new InternetAddress("email Account"));
 		     msg.setRecipients(Message.RecipientType.TO, 
-		                      InternetAddress.parse("yawarshaikh26@gmail.com",false));
+		                      InternetAddress.parse("email Account",false));
 
 		    // for add new recipients
 		     msg.setRecipients(Message.RecipientType.CC, 
@@ -67,8 +67,8 @@ public class MailCode {
 		// TODO Auto-generated method stub
 
 
-final String user = "yawarshaikh26@gmail.com";//
-final String pass = "Id0ntkn0wbr0";
+final String user = "email Account";//
+final String pass = "password";
 //1st step) Get the session object	
 Properties props = new Properties();
 props.put("mail.smtp.host", "smtp.gmail.com");//change accordingly
